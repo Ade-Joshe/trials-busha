@@ -1,18 +1,20 @@
 import { create } from 'zustand'
-import { IAPPMODE, IUser, Nullable } from '../utils';
+import { TAPPMODE, IUser, Nullable } from '../utils';
+import userData from './data';
 
 type Store = {
   user: Nullable<IUser>,
-  mode: IAPPMODE,
-  updateAppMode: (mode: IAPPMODE) => void
-}
+  mode: TAPPMODE,
+  updateAppMode: (mode: TAPPMODE) => void
+};
 
 const useAppStore = create<Store>()((set) => ({
   mode: "TEST",
-  user: null,
-  updateAppMode: (mode: IAPPMODE) => set((state) => ({ ...state, mode })),
-}))
+  user: userData[0],
+  updateAppMode: (mode: TAPPMODE) => set((state) => ({ ...state, mode })),
+  updateUser: (user: IUser) => set((state) => ({ ...state, user }))
+}));
 
 export {
   useAppStore
-}
+};
