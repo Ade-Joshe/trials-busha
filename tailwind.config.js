@@ -6,7 +6,13 @@ export default {
     "./src/**/*.{html,js,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bushaGray: "#E8EEE8",
+        bushaGreen: "#16CB3E",
+        bushaRed: "#F04438" //coralRed
+      }
+    },
   },
   plugins: [],
 }
