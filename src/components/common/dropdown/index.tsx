@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 interface DropdownProps {
-  options: string[];
-  onSelect: (option: string) => void;
+  onSelect: (option: any) => void;
+  target: React.ReactNode;
   children: React.ReactNode;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ options, onSelect, children }) => {
+const Dropdown: React.FC<DropdownProps> = ({ onSelect, target, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -42,9 +42,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onSelect, children }) => {
         onClick={toggleDropdown}
         className="flex items-center hover:bg-gray-100 focus:bg-gray-100 p-2 rounded-lg transition-color duration-300"
       >
-        <span className='px-2 py-1 bg-gray-200 text-sm rounded'>B</span>
-        <span className='ml-2 font-bold text-base'>Busha</span>
-
+        {target}
       </button>
 
       {isOpen && (

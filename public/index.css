@@ -717,6 +717,14 @@ video {
   max-width: 237px;
 }
 
+.max-w-\[1200\] {
+  max-width: 1200;
+}
+
+.max-w-\[1200px\] {
+  max-width: 1200px;
+}
+
 .origin-top-right {
   transform-origin: top right;
 }
@@ -923,6 +931,10 @@ video {
   padding: 0.75rem;
 }
 
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1015,6 +1027,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-black {

@@ -6,6 +6,7 @@ type Store = {
   user: Nullable<IUser>,
   mode: TAPPMODE,
   updateAppMode: (mode: TAPPMODE) => void
+  updateUser: (user: IUser) => void
 };
 
 const useAppStore = create<Store>()((set) => ({

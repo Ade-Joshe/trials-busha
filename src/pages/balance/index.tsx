@@ -12,7 +12,7 @@ export default function BalancePage() {
   const mode = useAppStore(state => state.mode)
 
   return (
-    <div className='container mx-auto h-screen flex transition-all duration-200'>
+    <div className='max-w-[1200px] mx-auto h-screen flex transition-all duration-200'>
       <Sidebar />
 
       <main className='w-full'>

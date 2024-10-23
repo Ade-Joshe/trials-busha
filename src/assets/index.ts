@@ -15,6 +15,7 @@ import KenyanShillingIcom from "./icons/shillings.svg?react";
 import BitcoinIcon from "./icons/bitcoin.svg?react";
 import UsdCoinIcon from "./icons/usd-coin.svg?react";
 import TetherIcon from "./icons/tether.svg?react";
+import DropdownIcon from "./icons/chevron-down.svg?react";
 
 export {
   HomeIcon,
@@ -33,5 +34,6 @@ export {
   BitcoinIcon,
   UsdCoinIcon,
   TetherIcon,
+  DropdownIcon,
   RedirectIcon
 };
