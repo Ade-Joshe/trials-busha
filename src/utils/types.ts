@@ -1,15 +1,23 @@
+
 type Nullable<T> = T | null;
 
 interface IUser {
   name: string;
-  age: number;
   token: string;
+  baseCurrency: string;
 }
 
-type IAPPMODE = "TEST" | "LIVE"
+type TAPPMODE = "TEST" | "LIVE";
+type TSidebarOption = {
+  name: string;
+  path?: string;
+  Icon?: any; // TODO: infer proper type
+  active?: boolean;
+}
 
 export type {
   Nullable,
   IUser,
-  IAPPMODE
+  TSidebarOption,
+  TAPPMODE
 }
