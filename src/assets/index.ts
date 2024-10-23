@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import HomeIcon from "./icons/home.svg?react";
 import BalanceIcon from "./icons/balance.svg?react";
 import ComplianceIcon from "./icons/compliance.svg?react";
