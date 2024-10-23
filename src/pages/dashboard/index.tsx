@@ -4,7 +4,7 @@ export default function DashboardPage() {
 
   return (
     <div className=''>
-      <h1 className='text-2xl'>Dashboard Page</h1>
+      <h1 className='text-2xl'>Dashboard</h1>
     </div>
   )
 }
