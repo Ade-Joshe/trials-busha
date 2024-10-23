@@ -5,9 +5,7 @@ import { useAppStore } from '../../store';
 import data, { accountHeaders } from './data';
 import { Tab } from './interface';
 
-type Props = {};
-
-const AccountsAssets = (props: Props) => {
+const AccountsAssets = () => {
 
   const [activeTab, setActiveTab] = useState<Tab>("");
 

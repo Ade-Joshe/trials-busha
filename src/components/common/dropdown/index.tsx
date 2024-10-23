@@ -6,7 +6,7 @@ interface DropdownProps {
   children: React.ReactNode;
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ onSelect, target, children }) => {
+const Dropdown: React.FC<DropdownProps> = ({ target, children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -14,10 +14,10 @@ const Dropdown: React.FC<DropdownProps> = ({ onSelect, target, children }) => {
     setIsOpen(!isOpen);
   };
 
-  const handleSelect = (option: string) => {
-    onSelect(option);
-    setIsOpen(false);
-  };
+  // const handleSelect = (option: string) => {
+  //   onSelect(option);
+  //   setIsOpen(false);
+  // };
 
   // for Click-away listener
   useEffect(() => {

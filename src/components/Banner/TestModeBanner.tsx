@@ -2,9 +2,7 @@ import React from 'react'
 import Button from '../common/button'
 import { ArrowRightIcon, RedirectIcon } from '../../assets'
 
-type Props = {}
-
-const TestModeBanner = (props: Props) => {
+const TestModeBanner = () => {
   return (
     <div className='flex justify-between items-center bg-[#F04438] h-[36px] w-full text-white p-2 text-xs gap-2'>
       Test mode

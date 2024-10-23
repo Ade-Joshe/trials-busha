@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import data from "./data";
 import SidebarOptions from './Options';
 import Dropdown from '../dropdown';
@@ -6,9 +6,7 @@ import { DropdownIcon } from '../../../assets';
 import { useAppStore } from '../../../store';
 import userData from '../../../store/data';
 
-type Props = {};
-
-const Sidebar = (props: Props) => {
+const Sidebar = () => {
 
   const { user, updateUser } = useAppStore(state => state)
 

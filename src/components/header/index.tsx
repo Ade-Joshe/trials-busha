@@ -4,9 +4,7 @@ import { ChatBubbleIcon, NotificationIcon, RedirectIcon } from '../../assets';
 import { useAppStore } from '../../store';
 import ToggleSwitch from '../common/toggle';
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
 
   const { updateAppMode, mode } = useAppStore(state => state);
 
