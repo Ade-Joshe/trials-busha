@@ -19,7 +19,7 @@ const Header = () => {
         />
       </div>
 
-      <div className='flex items-center gap-2 py-2 [&>*]:px-1'>
+      <div className='flex items-center gap-3 py-2 [&>*]:p-0'>
         <Button
           href='/#'
           label={"Test mode"}

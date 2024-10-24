@@ -16,7 +16,7 @@ const useAppStore = create<Store>()(
   persist(
     (set) => ({
       mode: "TEST",
-      user: null,
+      user: userData[0],
       hideSidebar: true,
       toggleSidebar: () => set((state) => ({ ...state, hideSidebar: !state.hideSidebar })),
       toggleAppMode: () => set((state) => ({ ...state, mode: state.mode === "TEST" ? "LIVE" : "TEST" })),
