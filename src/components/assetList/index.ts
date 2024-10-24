@@ -1,0 +1,1 @@
+export { default as AccountsAssets } from "./Accounts&Assets"

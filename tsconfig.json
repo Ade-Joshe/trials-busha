@@ -9,12 +9,6 @@
       "DOM",
       "DOM.Iterable"
     ],
-    "baseUrl": "src",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    },
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
@@ -31,6 +25,8 @@
     "noFallthroughCasesInSwitch": true,
   },
   "include": [
-    "src"
+    "src",
+    // "svg.d.ts"
+    "src/vite-env.d.ts"
   ]
 }

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import { AccountsAssets, BalanceCard } from '../../components'
 
 export default function DashboardPage() {
 
   return (
-    <div className=''>
-      <h1 className='text-2xl'>Dashboard Page</h1>
-    </div>
+    <Fragment>
+      <BalanceCard />
+
+      <AccountsAssets />
+    </Fragment>
   )
 }
