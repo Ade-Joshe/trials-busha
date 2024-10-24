@@ -3,6 +3,7 @@ type Nullable<T> = T | null;
 
 interface IUser {
   name: string;
+  role?: string;
   token: string;
   baseCurrency: string;
 }
@@ -12,7 +13,9 @@ type TSidebarOption = {
   name: string;
   path?: string;
   Icon?: any; // TODO: infer proper type
-  active?: boolean;
+  isMobile?: boolean;
+  hasDivider?: boolean;
+  SuffixIcon?: any
 }
 
 export type {

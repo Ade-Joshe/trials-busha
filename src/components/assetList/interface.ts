@@ -1,6 +1,6 @@
-export type Tab = "" | "bank" | "crypto";
+export type TTab = "" | "bank" | "crypto";
 export type TAccount = {
   id: number;
   label: string;
-  value: Tab
+  value: TTab
 };

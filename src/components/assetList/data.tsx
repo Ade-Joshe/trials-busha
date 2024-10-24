@@ -37,7 +37,7 @@ const data = {
         id: "shillings",
         Icon: <UsdCoinIcon />,
         currency: "USDC",
-        title: 'Bitcoin',
+        title: 'USD Coin',
         amount: '20',
         balance: '12.56'
       },

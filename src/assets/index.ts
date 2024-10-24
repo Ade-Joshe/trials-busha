@@ -18,6 +18,10 @@ import BitcoinIcon from "./icons/bitcoin.svg?react";
 import UsdCoinIcon from "./icons/usd-coin.svg?react";
 import TetherIcon from "./icons/tether.svg?react";
 import DropdownIcon from "./icons/chevron-down.svg?react";
+import CheckIcon from "./icons/check.svg?react";
+import LogoutIcon from "./icons/logout.svg?react";
+import HamburgerIcon from "./icons/hamburger.svg?react";
+import CloseIcon from "./icons/close.svg?react";
 
 export {
   HomeIcon,
@@ -37,5 +41,9 @@ export {
   UsdCoinIcon,
   TetherIcon,
   DropdownIcon,
+  CheckIcon,
+  LogoutIcon,
+  HamburgerIcon,
+  CloseIcon,
   RedirectIcon
 };

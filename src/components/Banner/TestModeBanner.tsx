@@ -4,16 +4,18 @@ import { ArrowRightIcon, RedirectIcon } from '../../assets'
 
 const TestModeBanner = () => {
   return (
-    <div className='flex justify-between items-center bg-[#F04438] h-[36px] w-full text-white p-2 text-xs gap-2'>
-      Test mode
+    <div className='flex justify-between lg:items-center bg-[#F04438] w-full text-white p-3 lg:p-2 text-xs gap-2 flex-wrap flex-col lg:flex-row'>
+      <span >
+        Test mode
+      </span>
 
-      <div className='flex items-center text-xs'>
+      <div className='inline-flex flex-wrap items-center text-xs'>
         You’re using test data. No real transactions will be processed.
 
         <Button
           href='/#'
           label={"Learn more about test mode"}
-          className='text-xs underline'
+          className='text-xs underline pl-1 inline-flex'
           suffixIcon={<RedirectIcon className={"stroke-white"} />}
         />
       </div>
@@ -21,7 +23,7 @@ const TestModeBanner = () => {
       <Button
         href='/#'
         label={"Complete verification"}
-        className='text-xs'
+        className='text-xs justify-start lg:justify-center p-0 lg:p-2 w-auto'
         suffixIcon={<ArrowRightIcon className={"fill-white"} />}
       />
     </div>

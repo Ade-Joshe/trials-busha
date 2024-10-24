@@ -1,16 +1,13 @@
-import React from 'react'
-import Sidebar from '../../components/common/sidebar'
+import React, { Fragment } from 'react'
+import { AccountsAssets, BalanceCard } from '../../components'
 
 export default function DashboardPage() {
 
   return (
-    <div className='container mx-auto h-screen flex transition-all duration-200'>
-      <Sidebar />
+    <Fragment>
+      <BalanceCard />
 
-      <main className='px-10'>
-        <h1 className='text-2xl'>Dashboard</h1>
-      </main>
-
-    </div>
+      <AccountsAssets />
+    </Fragment>
   )
 }
