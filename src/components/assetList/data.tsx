@@ -1,5 +1,5 @@
 import React from 'react';
-import { NairaIcon, KenyanShillingIcom, BitcoinIcon, UsdCoinIcon } from '../../assets';
+import { NairaIcon, KenyanShillingIcom, BitcoinIcon, UsdCoinIcon, TetherIcon } from '../../assets';
 import { TAccount } from './interface';
 
 const data = {
@@ -43,7 +43,7 @@ const data = {
       },
       {
         id: "tether",
-        Icon: <KenyanShillingIcom />,
+        Icon: <TetherIcon />,
         currency: "USDT",
         title: 'Tether',
         amount: '102',

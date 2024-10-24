@@ -9,10 +9,11 @@ interface DropdownProps {
   onSelect?: (option: any) => void;
   children?: Function;
   triggerClassName?: string,
-  position?: "left" | "right"
+  position?: "left" | "right",
+  className?: string
 }
 
-const Dropdown: React.FC<DropdownProps> = ({ trigger, options, onSelect, children, triggerClassName, position = "left", selectedOption }) => {
+const Dropdown: React.FC<DropdownProps> = ({ trigger, options, onSelect, children, triggerClassName, position = "left", selectedOption, className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -42,7 +43,7 @@ const Dropdown: React.FC<DropdownProps> = ({ trigger, options, onSelect, childre
   }, [dropdownRef]);
 
   return (
-    <div ref={dropdownRef} className="relative inline-block text-left">
+    <div ref={dropdownRef} className={twMerge("relative inline-block text-left z-[10]", className)}>
 
       <button
         onClick={toggleDropdown}

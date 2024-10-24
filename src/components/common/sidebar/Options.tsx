@@ -16,12 +16,12 @@ const SidebarOption = ({ path, Icon, name, hasDivider, isMobile, SuffixIcon }: T
           href={path}
           className={
             twMerge('group w-full flex items-center gap-2 px-2 py-1 rounded-md cursor-pointer hover:bg-bushaGray',
-              'justify-start text-gray-500 hover:text-black transition-color duration-200',
-              active && 'bg-bushaGray text-black',
+              'justify-start text-gray-500 hover:text-black transition-color duration-200 font-normal',
+              active && 'bg-bushaGray text-black font-medium',
               isMobile && "lg:hidden"
             )}
           label={name}
-          prefixIcon={Icon && <Icon className={twMerge("fill-gray-300 group-hover:fill-black transition-color duration-200", active && "fill-black")} />}
+          prefixIcon={Icon && <Icon className={twMerge("fill-gray-400 group-hover:fill-black transition-color duration-200", active && "fill-black")} />}
           suffixIcon={SuffixIcon && <SuffixIcon className={twMerge("ml-auto stroke-black fill-bushaGray group-hover:fill-black transition-color duration-200", active && "fill-black")} />}
         />
       </li>
