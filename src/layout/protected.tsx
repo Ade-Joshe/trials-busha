@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 import { Header, Sidebar } from '../components'
 import { useAppStore } from '../store'
 import { isValidUserRole } from '../utils/user';
-import { TestModeBanner } from '../components/banner';
+import { TestModeBanner } from '../components/bannerComponent';
 
 type Props = {
   children: React.ReactNode,
