@@ -1,8 +1,9 @@
 import React from 'react';
 import { Navigate } from "react-router-dom";
-import { Header, Sidebar, TestModeBanner } from '../components'
+import { Header, Sidebar } from '../components'
 import { useAppStore } from '../store'
 import { isValidUserRole } from '../utils/user';
+import { TestModeBanner } from '../components/banner';
 
 type Props = {
   children: React.ReactNode,
