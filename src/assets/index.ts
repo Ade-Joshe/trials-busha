@@ -22,6 +22,10 @@ import CheckIcon from "./icons/check.svg?react";
 import LogoutIcon from "./icons/logout.svg?react";
 import HamburgerIcon from "./icons/hamburger.svg?react";
 import CloseIcon from "./icons/close.svg?react";
+import InfoIcon from "./icons/info.svg?react";
+import DummyChart from "./icons/dummy-chart.svg?react";
+import ChartFrame from "./icons/chart-frame.svg?react";
+import ChartContent from "./icons/chart-content.svg?react";
 
 export {
   HomeIcon,
@@ -45,5 +49,9 @@ export {
   LogoutIcon,
   HamburgerIcon,
   CloseIcon,
-  RedirectIcon
+  InfoIcon,
+  DummyChart,
+  RedirectIcon,
+  ChartFrame,
+  ChartContent
 };
